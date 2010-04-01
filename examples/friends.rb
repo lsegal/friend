@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/../lib/export'
+require File.dirname(__FILE__) + '/../lib/friend'
 
 class Car
   def initialize; @engine = Engine.new end

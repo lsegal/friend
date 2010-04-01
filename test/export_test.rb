@@ -1,5 +1,5 @@
 require "test/unit"
-require File.dirname(__FILE__) + '/../lib/export'
+require File.dirname(__FILE__) + '/../lib/friend'
 
 class A; def bar; D.new.foo end end
 class B; def bar; D.new.foo end end
