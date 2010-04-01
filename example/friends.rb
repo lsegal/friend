@@ -1,6 +1,7 @@
 require File.dirname(__FILE__) + '/../lib/friend'
 
 class Car
+  attr_reader :engine
   def initialize; @engine = Engine.new end
   
   def turn_on(key)
@@ -25,11 +26,11 @@ car = Car.new
 car.turn_on("foo")
 
 # But we can't enable the engine directly
-car.instance_variable_get("@engine").engage
+car.engine.engage
 
 # Output:
 # Engine turned on!
 # Car turned on!
 # export.rb:17:in `block in export': `engage' is not accessible outside 
 # Engine (NoMethodError)
-# 	from friends.rb:35:in `<main>'
+# 	from friends.rb:29:in `<main>'
