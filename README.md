@@ -20,6 +20,10 @@ any module/class to export a method to a list of specific classes in the
 form:
 
     export :methodname, Class1, Class2, ...
+    
+**Note**: `export` is an alias of `friend`. They do the exact same thing, though
+depending on your semantics one terminology might be more suited than the
+other.
 
 ## Example
 
