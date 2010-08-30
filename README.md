@@ -1,6 +1,5 @@
 # Friend
 
-
 Adds fine-grained visibility semantics to Ruby, allowing you to make methods
 visible only to specific classes (and their subclasses).
 
